@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 
-import { formatDuration } from '@/app/_utils/Date';
+import { formatDuration } from '@/app/[locale]/_utils/Date';
 import MiniMonitor from './MiniMonitor';
 
 export default function Card({
@@ -34,7 +34,7 @@ export default function Card({
         </div>
         <p className="mb-4 text-[20.39px]">{name}</p>
         <div className="mb-[10.2px] flex items-center gap-[13.59px]">
-          <div className="bg-backloader h-[6.8px] w-8/12 rounded-full">
+          <div className="h-[6.8px] w-8/12 rounded-full bg-backloader">
             <div className="h-[6.8px] w-2/3 rounded-full bg-blue-600"></div>
           </div>
           <span className="flex gap-1 text-[11.05px]">

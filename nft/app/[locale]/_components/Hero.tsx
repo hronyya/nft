@@ -1,12 +1,19 @@
+'use client';
+
 import Card from './Card';
 import imgMonke from '@/public/058810892b364fd6879fe1a6054a3978.png';
 import imgHearts from '@/public/Frame 2das.png';
 import imgTon from '@/public/db8111ee49dd72a2787c77f13639eb62.png';
 import BlurCircle from './BlurCircle';
+import Button from './Button';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
   const startDate = new Date('2024-06-25T00:00:00');
   const endDate = new Date('2024-06-26T07:11:00');
+
+  const { t } = useTranslation();
+
   return (
     <div className="relative mb-40">
       <div className="absolute -right-10 z-20 rotate-12">
@@ -41,13 +48,9 @@ export default function Hero() {
       </div>
 
       <div className="mt-[260px] flex w-screen flex-col items-center justify-center text-white">
-        <h1 className="mb-[12px] text-7xl tracking-tighter">
-          Универсальная NFT-платформа
-        </h1>
-        <h4 className="mb-[80px] text-6xl text-backtext">внутри Telegram</h4>
-        <button className="text- h-[62px] w-[321px] rounded-xl bg-white text-blacktext transition-all duration-300 hover:bg-stone-200">
-          Запустить GetNeFT в Telegram
-        </button>
+        <h1 className="mb-[12px] text-7xl tracking-tighter">{t('heroH1')}</h1>
+        <h4 className="mb-[80px] text-6xl text-backtext">{t('heroP')}</h4>
+        <Button text={t('buttonText')} />
       </div>
       <div className="absolute left-20 top-0">
         <BlurCircle color="blue-500" radius={223} />

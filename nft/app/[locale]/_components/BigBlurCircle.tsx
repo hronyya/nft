@@ -1,0 +1,13 @@
+export default function BlurCircle({
+  color,
+  radius,
+}: {
+  color?: string;
+  radius?: number;
+}) {
+  return (
+    <div
+      className={`h-15 shadow-bannerbluer w-20 rounded-full shadow-[0_55px_190px_40px_rgba(0,0,225,0.3)]`}
+    ></div>
+  );
+}

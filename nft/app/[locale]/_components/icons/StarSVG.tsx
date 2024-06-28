@@ -1,10 +1,4 @@
-export default function Star({
-  rotateDeg = 0,
-  scaleLvl = 0,
-}: {
-  rotateDeg?: number;
-  scaleLvl?: number;
-}) {
+export default function StarSVG() {
   return (
     <svg
       width="105"
@@ -28,9 +22,9 @@ export default function Star({
           width="104.249"
           height="104.249"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
