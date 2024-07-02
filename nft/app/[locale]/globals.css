@@ -4,15 +4,15 @@
 
 @keyframes ticker {
   0% {
-    transform: translateX(0);
+    transform: translateX(-8%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-28%);
   }
 }
 
 .animate-ticker {
-  animation: ticker 10s linear infinite;
+  animation: ticker 5s linear infinite;
 }
 .custom-before::before {
   content: url('data:image/svg+xml;utf8,<svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.5" width="34" height="34" rx="17" fill="white" fill-opacity="0.15"/><circle cx="17" cy="17.5" r="7" fill="white"/></svg>');

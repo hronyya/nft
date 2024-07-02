@@ -4,7 +4,7 @@ import NavLinks from './NavLinks';
 
 export default function Footer() {
   return (
-    <footer className="mx-auto flex w-[1320px] justify-between border-t-2 border-white/5 py-10">
+    <footer className="mx-auto flex w-full justify-between border-t-2 border-white/5 py-10">
       <div>
         <Logo />
         <p className="mt-6 w-[427px] text-backtext">

@@ -1,25 +1,25 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
+import ProfileSVG from './icons/ProfileSVG';
+import LightningSVG from './icons/LightningSVG';
 import CardAdvantages from './CardAdvantages';
+import MessageBlock from './MessageBlock';
 import phone1Src from '@/public/phone1.png';
 import phone1_1Src from '@/public/phone1_1.png';
 import phone1_2Src from '@/public/phone1_2.png';
 import phone2_1Src from '@/public/phone2_1.png';
 import phone2_2Src from '@/public/phone2_2.png';
 import phone3Src from '@/public/phone3.png';
-import MessageBlock from './MessageBlock';
-import { useTranslation } from 'react-i18next';
-import ProfileSVG from './icons/ProfileSVG';
-import LightningSVG from './icons/LightningSVG';
 
 export default function OurAdvantages() {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto mb-52 w-[1320px]">
-      <h3 className="pb-20 text-center text-[40px] font-semibold text-white">
+    <div className="mx-auto mb-52 w-5/6">
+      <h3 className="pb-20 text-center text-4xl+ font-semibold text-white">
         {t('advantagesH3')}
       </h3>
       <div className="flex gap-5">

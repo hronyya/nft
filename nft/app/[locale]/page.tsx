@@ -1,11 +1,11 @@
-import Hero from './_components/Hero';
-import Ticker from './_components/Ticker';
-import MotivationalBlock from './_components/MotivationalBlock';
-import OurAdvantages from './_components/OurAdvantages';
-import MoreBenefits from './_components/MoreBenefits';
-import Banner from './_components/Banner';
 import initTranslations from '../i18n';
-import TranslationsProvider from './_contexts/TranslationsProvider';
+import TranslationsProvider from '@/contexts/TranslationsProvider';
+import Hero from '@/components/Hero';
+import Ticker from '@/components/Ticker';
+import MotivationalBlock from '@/components/MotivationalBlock';
+import OurAdvantages from '@/components/OurAdvantages';
+import MoreBenefits from '@/components/MoreBenefits';
+import Banner from '@/components/Banner';
 
 export const metadata = {
   title: 'NFT-платформа',
@@ -23,9 +23,8 @@ export default async function Home({ params: { locale } }: { params: any }) {
       locale={locale}
       namespaces={i18Namespaces}
     >
-      <main>
+      <main className="mt-56">
         <Hero />
-        <Ticker />
         <MotivationalBlock />
         <OurAdvantages />
         <MoreBenefits positionGif={1} />

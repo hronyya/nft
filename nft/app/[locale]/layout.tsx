@@ -1,12 +1,13 @@
+import { Inter_Tight, Roboto } from 'next/font/google';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 import './globals.css';
-import Header from './_components/Header';
-import Footer from './_components/Footer';
 
-const roboto = Roboto({
-  weight: ['400', '700'],
-  subsets: ['latin'],
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
+const roboto = Inter_Tight({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin', 'cyrillic'],
   display: 'swap',
 });
 
@@ -22,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} overflow-x-hidden bg-mainback`}>
+      <body
+        className={`${roboto.className} container mx-auto w-[73%] overflow-x-hidden bg-mainback`}
+      >
         <Header />
         {children}
         <Footer />
