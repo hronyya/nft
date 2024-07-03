@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} container mx-auto w-[73%] overflow-x-hidden bg-mainback`}
+        className={`${roboto.className} container mx-auto w-[90%] overflow-x-hidden bg-mainback xl:w-[73%]`}
       >
         <Header />
         {children}

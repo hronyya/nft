@@ -18,7 +18,7 @@ export default function OurAdvantages() {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto mb-52 w-5/6">
+    <div className="mx-auto mb-52">
       <h3 className="pb-20 text-center text-4xl+ font-semibold text-white">
         {t('advantagesH3')}
       </h3>
@@ -27,30 +27,32 @@ export default function OurAdvantages() {
           title={t('advantagesTitle1')}
           text={t('advantagesValue1')}
         >
-          <Image
-            className="absolute -right-16 top-20 z-20 rotate-12 rounded-full shadow-lg shadow-cyan-400/20"
-            src={phone1_1Src}
-            width={54}
-            height={54}
-            alt="phone1"
-          ></Image>
-          <Image
-            className="absolute -left-10 bottom-52 z-20 rotate-[-13.48deg] rounded-full shadow-2xl shadow-cyan-400/80"
-            src={phone1_2Src}
-            width={54}
-            height={54}
-            alt="phone1"
-          ></Image>
+          <div className="scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
+            <Image
+              className="absolute -right-16 top-20 z-20 rotate-12 rounded-full shadow-lg shadow-cyan-400/20"
+              src={phone1_1Src}
+              width={54}
+              height={54}
+              alt="phone1"
+            ></Image>
+            <Image
+              className="absolute -left-10 bottom-52 z-20 rotate-[-13.48deg] rounded-full shadow-2xl shadow-cyan-400/80"
+              src={phone1_2Src}
+              width={54}
+              height={54}
+              alt="phone1"
+            ></Image>
 
-          <div className="relative h-[470px] w-[228px]">
-            <Image src={phone1Src} fill alt="phone1"></Image>
+            <div className="relative h-[470px] w-[228px]">
+              <Image src={phone1Src} fill alt="phone1"></Image>
+            </div>
           </div>
         </CardAdvantages>
         <CardAdvantages
           title={t('advantagesTitle2')}
           text={t('advantagesValue2')}
         >
-          <div className="relative h-[470px] w-[228px]">
+          <div className="relative h-[470px] w-[228px] scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
             <Image
               src={phone2_1Src}
               alt="phone2_1"
@@ -67,7 +69,7 @@ export default function OurAdvantages() {
           title={t('advantagesTitle3')}
           text={t('advantagesValue3')}
         >
-          <div className="relative h-[470px] w-[228px]">
+          <div className="relative h-[470px] w-[228px] scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
             <Image
               src={phone3Src}
               alt="phone3"

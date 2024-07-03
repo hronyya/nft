@@ -23,6 +23,13 @@ const config: Config = {
             lineHeight: '1.75rem', // 28px
           },
         ],
+        '5xl+': [
+          '54px',
+          {
+            // 40px
+            lineHeight: '1.75rem', // 28px
+          },
+        ],
         '8xl+': [
           '6.25rem',
           {
@@ -51,6 +58,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         monke: '@/public/058810892b364fd6879fe1a6054a3978.png',
       },
+      screens: {},
     },
   },
   plugins: [],
