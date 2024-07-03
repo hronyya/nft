@@ -16,7 +16,7 @@ export default function Hero() {
   const { t } = useTranslation();
   return (
     <div className={`relative`}>
-      <div className="absolute -right-40 -top-32 w-[60%] rotate-12 sm:-right-40 sm:w-[50%] md:-right-52 md:w-[40%] lg:-right-52 lg:w-[30%] xl:-right-60 xl:w-[24%] 2xl:-right-72 2xl:w-[22.5%]">
+      <div className="absolute -right-20 -top-60 -z-10 sm:-top-32 w-[60%] rotate-12 sm:-right-40 sm:w-[50%] md:-right-52 md:w-[40%] lg:-right-52 lg:w-[30%] xl:-right-60 xl:w-[24%] 2xl:-right-72 2xl:w-[22.5%]">
         <Card
           imgSrc={imgMonke}
           name="Monke"
@@ -26,7 +26,7 @@ export default function Hero() {
           endDate={endDate}
         />
       </div>
-      <div className="absolute -left-36 -top-40 -z-20 w-[60%] -rotate-6 sm:-left-40 sm:-top-32 sm:w-[60$] md:-left-40 md:-top-36 md:w-[40%] lg:-left-52 lg:w-[30%] xl:-left-60 xl:w-[26%] 2xl:-left-64 2xl:w-[22.5%]">
+      <div className="absolute -left-24 -top-64 -z-20 w-[60%] -rotate-6 sm:-left-40 sm:-top-32 sm:w-[60$] md:-left-40 md:-top-36 md:w-[40%] lg:-left-52 lg:w-[30%] xl:-left-60 xl:w-[26%] 2xl:-left-64 2xl:w-[22.5%]">
         <Card
           imgSrc={imgTon}
           name="TON Collection"
@@ -36,7 +36,7 @@ export default function Hero() {
           endDate={endDate}
         />
       </div>
-      <div className="absolute -right-28 -top-44 -z-20 w-[60%] -rotate-3 sm:-right-32 sm:w-[50%] md:-right-36 md:w-[38%] lg:-right-40 lg:-top-24 lg:w-[30%] xl:-right-44 xl:w-[26%] 2xl:-right-52 2xl:w-[22.5%]">
+      <div className="absolute -right-10 -top-72 sm:-top-44 -z-20 w-[60%] -rotate-3 sm:-right-32 sm:w-[50%] md:-right-36 md:w-[38%] lg:-right-40 lg:-top-24 lg:w-[30%] xl:-right-44 xl:w-[26%] 2xl:-right-52 2xl:w-[22.5%]">
         <Card
           imgSrc={imgHearts}
           name="[ MiLK Collection ]"
@@ -48,10 +48,10 @@ export default function Hero() {
       </div>
 
       <div className="z-10 mb-52 flex flex-col items-center text-white">
-        <h1 className="xl:text-5xl+ mb-[12px] w-1/2 text-center text-2xl+ font-semibold tracking-tight md:w-full md:text-3xl lg:text-5xl 2xl:text-7xl">
+        <h1 className="xl:text-5xl+ mb-[12px] w-10/12 sm:w-8/12 text-center text-4xl font-semibold  tracking-tight md:w-full sm:text-3xl lg:text-5xl 2xl:text-7xl">
           {t('heroH1')}
         </h1>
-        <h4 className="mb-[80px] text-base font-semibold tracking-tight text-backtext md:text-lg lg:text-4xl+ xl:text-5xl 2xl:text-6xl">
+        <h4 className="mb-[40px] sm:mb-[80px]  font-semibold tracking-tight text-backtext text-xl md:text-lg lg:text-4xl+ xl:text-5xl 2xl:text-6xl">
           {t('heroP')}
         </h4>
         <Button text={t('buttonText')} />
@@ -60,7 +60,7 @@ export default function Hero() {
       <div className="absolute -left-40 -top-10">
         <BlurCircle />
       </div>
-      <div className="absolute -left-5 top-60 -z-10">
+      <div className="absolute -left-10 top-40 -z-10">
         <BlurCircle />
       </div>
       <div className="absolute -right-20 -top-10 -z-10">

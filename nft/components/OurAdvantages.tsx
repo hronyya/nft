@@ -18,16 +18,16 @@ export default function OurAdvantages() {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto mb-52">
-      <h3 className="pb-20 text-center text-4xl+ font-semibold text-white">
+    <div className="mx-auto mb-32 sm:mb-52">
+      <h3 className="pb-20 text-center text-3xl sm:text-4xl+ font-semibold text-white">
         {t('advantagesH3')}
       </h3>
-      <div className="flex gap-5">
+      <div className="flex flex-col items-center sm:flex-row gap-5">
         <CardAdvantages
           title={t('advantagesTitle1')}
           text={t('advantagesValue1')}
         >
-          <div className="scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
+          <div className="scale-[0.8] sm:scale-[0.5] md:scale-[0.65] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
             <Image
               className="absolute -right-16 top-20 z-20 rotate-12 rounded-full shadow-lg shadow-cyan-400/20"
               src={phone1_1Src}
@@ -52,7 +52,7 @@ export default function OurAdvantages() {
           title={t('advantagesTitle2')}
           text={t('advantagesValue2')}
         >
-          <div className="relative h-[470px] w-[228px] scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
+          <div className="relative h-[470px] w-[228px] scale-[0.8] sm:scale-[0.5] md:scale-[0.65] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
             <Image
               src={phone2_1Src}
               alt="phone2_1"
@@ -69,7 +69,7 @@ export default function OurAdvantages() {
           title={t('advantagesTitle3')}
           text={t('advantagesValue3')}
         >
-          <div className="relative h-[470px] w-[228px] scale-50 md:scale-[0.55] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
+          <div className="relative h-[470px] w-[228px] scale-[0.8] sm:scale-[0.5] md:scale-[0.65] lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
             <Image
               src={phone3Src}
               alt="phone3"

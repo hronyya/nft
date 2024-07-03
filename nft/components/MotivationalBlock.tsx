@@ -15,7 +15,7 @@ export default function MotivationalBlock() {
       <div className="absolute -left-64 top-10 rotate-[30deg] scale-150">
         <StarSVG />
       </div>
-      <div className="absolute -right-32 top-28 -rotate-[20deg] scale-125 md:-left-44 md:top-28">
+      <div className="absolute -right-20 top-28 -rotate-[20deg] scale-125 md:-left-44 md:top-28">
         <StarSVG />
       </div>
 

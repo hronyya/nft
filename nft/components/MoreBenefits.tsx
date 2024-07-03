@@ -13,10 +13,11 @@ export default function MoreBenefits({ positionGif }: { positionGif: 1 | 2 }) {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto mb-52 flex h-screen w-full scale-[0.6] items-center gap-32 lg:w-10/12 lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
+    <div className="mx-auto pb-10 sm:mb-52  h-[1300px] flex flex-col sm:flex-row sm:h-screen w-11/12 scale-[1]
+     items-center gap-10 md:gap-32 lg:w-10/12 lg:scale-75 xl:scale-[0.8] 2xl:scale-100">
       <div
         className={clsx(
-          'relative h-5/6 w-80 rounded-[52px] border-2 bg-black',
+          'relative flex object-center sm:h-[500px] md:h-[600px] w-10/12 h-[700px] sm:w-96  rounded-[52px] border-[1px]  sm:border-2 bg-black', 
           {
             'order-0': positionGif === 1,
             'order-2': positionGif === 2,
@@ -26,7 +27,7 @@ export default function MoreBenefits({ positionGif }: { positionGif: 1 | 2 }) {
         <Image
           src={positionGif === 1 ? gif1 : gif2}
           fill
-          className="rounded-[52px] p-6"
+          className="rounded-[52px] p-2 lg:p-6 h-[600px]"
           alt="phone"
         />
       </div>
