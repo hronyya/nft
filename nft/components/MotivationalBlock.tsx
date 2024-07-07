@@ -3,39 +3,70 @@
 import { useTranslation } from 'react-i18next';
 
 import BlurBack from './BlurBack';
-import StarSVG from './icons/StarSVG';
+import StarImg from '@/public/Star.png';
 
 export default function MotivationalBlock() {
   const { t } = useTranslation();
   return (
-    <div className="relative mx-auto my-80 flex w-[50%] flex-col items-center gap-10 text-center">
-      <div className="absolute -right-28 -top-10 rotate-[20deg] scale-100 md:-left-44 md:top-0">
-        <StarSVG />
-      </div>
-      <div className="absolute -left-64 top-10 rotate-[30deg] scale-150">
-        <StarSVG />
-      </div>
-      <div className="absolute -right-20 top-28 -rotate-[20deg] scale-125 md:-left-44 md:top-28">
-        <StarSVG />
+    <div className="relative flex w-[50%] flex-col items-center gap-10 text-center">
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute left-[-40%] top-[-30%] size-[55px] -rotate-12 sm:left-[-20%] sm:rotate-0 lg:left-[-2%]"
+      />
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute left-[-100%] top-[30%] size-[75px] rotate-6 sm:left-[-40%] lg:left-[-12%]"
+      />
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute left-[-60%] top-[100%] size-[65px] rotate-12 sm:left-[-30%] sm:top-[60%] sm:-rotate-[25deg] lg:left-[-4%]"
+      />
+      <div className="z-20 flex w-[350px] flex-col items-center gap-10 sm:w-[390px] lg:w-9/12">
+        <h2 className="w-11/12 text-3xl font-semibold leading-none text-white lg:w-[80%] lg:leading-8 xl:text-3xl xl:leading-[48px] 2xl:text-4xl">
+          {t('motivationH2')}
+        </h2>
+        <p className="w-full text-lg font-normal text-backtext sm:w-full md:text-sm lg:w-[80%] xl:text-base 2xl:text-xl">
+          {t('motivationP')}
+        </p>
       </div>
 
-      <h2 className="mb-40px w-80 text-2xl font-semibold leading-none text-white lg:w-[80%] lg:leading-8 xl:text-3xl xl:leading-[48px] 2xl:text-4xl">
-        {t('motivationH2')}
-      </h2>
-      <p className="w-80 text-xs font-normal text-backtext sm:w-full md:text-sm lg:w-[80%] xl:text-base 2xl:text-xl">
-        {t('motivationP')}
-      </p>
-
-      <div className="absolute -top-20 right-52 rotate-[20deg] scale-100 md:-right-40">
-        <StarSVG />
-      </div>
-      <div className="absolute -right-64 top-10 rotate-[30deg] scale-150">
-        <StarSVG />
-      </div>
-      <div className="absolute right-52 top-40 -rotate-[20deg] scale-125 md:-right-44">
-        <StarSVG />
-      </div>
-      <div className="absolute -left-80 -top-20">
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute right-[-60%] top-[-25%] size-[50px] rotate-6 sm:right-[-30%] sm:top-[0%] sm:size-[70px] sm:-rotate-12 lg:right-[-2%]"
+      />
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute right-[-100%] top-[30%] size-[50px] rotate-6 sm:right-[-40%] lg:right-[-12%]"
+      />
+      <div
+        style={{
+          backgroundImage: `url(${StarImg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="absolute right-[-58%] top-[90%] size-[65px] -rotate-12 sm:right-[-30%] sm:top-[60%] sm:rotate-[25deg] lg:right-[-4%]"
+      />
+      <div className="absolute -top-52 left-[-60%] rotate-90 sm:-top-52 sm:rotate-0">
         <BlurBack />
       </div>
     </div>

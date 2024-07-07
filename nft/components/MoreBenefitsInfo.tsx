@@ -7,7 +7,9 @@ export default function MoreBenefitsInfo({
 }) {
   return (
     <div className="w-full sm:w-[458px]">
-      <h5 className="mb-20 text-3xl sm:text-4xl font-semibold text-white">{title}</h5>
+      <h5 className="mb-20 text-3xl font-semibold text-white sm:text-4xl">
+        {title}
+      </h5>
       <ul className="flex flex-col gap-6">
         {Object.entries(listAdvantages).map(
           ([titleAdvantage, valueAdvantage]) => (
@@ -16,10 +18,10 @@ export default function MoreBenefitsInfo({
               key={titleAdvantage}
             >
               <div>
-                <h6 className="mb-3 sm:mb-6 text-2xl sm:text-3xl font-semibold text-white">
+                <h6 className="mb-3 text-2xl font-semibold text-white sm:mb-6 sm:text-3xl">
                   {titleAdvantage}
                 </h6>
-                <p className="text-lg sm:text-xl font-normal text-backtext">
+                <p className="text-lg font-normal text-backtext sm:text-xl">
                   {valueAdvantage}
                 </p>
               </div>

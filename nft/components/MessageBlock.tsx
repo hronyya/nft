@@ -10,7 +10,7 @@ export default function MessageBlock({
   children: ReactNode;
 }) {
   return (
-    <div className="bg-backmessage/80 z-20 flex h-[58px] w-[228px] items-center gap-2 rounded-[11px]">
+    <div className="z-20 flex h-[58px] w-[228px] items-center gap-2 rounded-[11px] bg-backmessage/80">
       <div className="ml-4">{children}</div>
       <div>
         <p className="text-white">{mainText}</p>

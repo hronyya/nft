@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translateX(-8%)' },
+          '100%': { transform: 'translateX(-26.2%)' },
+        },
+      },
+      animation: {
+        ticker: 'ticker 10s linear infinite',
+      },
+
       fontSize: {
         '2xl+': [
           '1.75rem',
