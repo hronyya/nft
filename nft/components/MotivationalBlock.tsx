@@ -8,7 +8,7 @@ import StarImg from '@/public/Star.png';
 export default function MotivationalBlock() {
   const { t } = useTranslation();
   return (
-    <div className="relative flex w-[50%] flex-col items-center gap-10 text-center">
+    <div className="relative mb-0 flex w-[50%] flex-col items-center gap-10 py-14 text-center md:mb-[100px]">
       <div
         style={{
           backgroundImage: `url(${StarImg.src})`,

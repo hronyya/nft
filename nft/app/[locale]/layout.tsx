@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} container max-w-[640px] overflow-x-hidden bg-mainback sm:max-w-[1920px]`}
+        className={`${roboto.className} container mx-auto max-w-[640px] overflow-x-hidden bg-mainback sm:max-w-[1920px]`}
       >
         <div
           style={{

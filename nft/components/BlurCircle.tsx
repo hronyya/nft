@@ -1,23 +1,17 @@
-interface Circles {
-  [key: string]: string;
+interface BlurCircleProps {
+  gradientColor: string;
+  position: string;
 }
 
-const blurCircles: Circles = {
-  one: 'circle at center, rgba(4, 124, 174, 0.2), rgba(0, 0, 0, 0) 135px',
-  two: 'circle at center, rgba(34, 154, 204, 0.25), rgba(0, 0, 0, 0) 158px',
-  three: 'circle at center, rgba(61, 117, 255, 0.2), rgba(0, 0, 0, 0) 110px',
-  four: 'circle at center, rgba(115, 157, 221, 0.2), rgba(0, 0, 0, 0) 127px',
-  five: 'circle at center, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0) 126px',
-};
-
-export default function BlurCircle({ number }: { number: string }) {
+export default function BlurCircle({
+  gradientColor,
+  position,
+}: BlurCircleProps) {
   return (
     <div
-      className="aspect-square h-[20rem]"
+      className={`h-[252px] w-[252px] scale-[0.4] sm:scale-100 ${position}`}
       style={{
-        background: `radial-gradient(${blurCircles[number]})`,
-        backgroundPosition: 'center',
-        backgroundSize: '100% 100%',
+        background: gradientColor,
       }}
     />
   );

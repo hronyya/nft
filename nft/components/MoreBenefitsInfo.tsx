@@ -7,7 +7,7 @@ export default function MoreBenefitsInfo({
 }) {
   return (
     <div className="w-full sm:w-[458px]">
-      <h5 className="mb-20 text-3xl font-semibold text-white sm:text-4xl">
+      <h5 className="mb-10 text-[32px] font-semibold text-white sm:text-4xl md:mb-20">
         {title}
       </h5>
       <ul className="flex flex-col gap-6">

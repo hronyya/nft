@@ -12,6 +12,7 @@ import phone2_2 from '@/public/phone2_2.png';
 import phone3 from '@/public/phone3.png';
 import profileIcon from '@/public/profileIcon.png';
 import lightningIcon from '@/public/lightningIcon.png';
+import Image from 'next/image';
 
 export default function OurAdvantages() {
   const { t } = useTranslation();
@@ -90,49 +91,41 @@ export default function OurAdvantages() {
             />
             <div className="absolute -left-16 top-5 rotate-[-5deg]">
               <MessageBlock mainText="Invited friend" secondText="+200 Points">
-                <div
-                  style={{
-                    backgroundImage: `url(${profileIcon.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="size-[24px]"
+                <Image
+                  src={profileIcon.src}
+                  alt="profileIcon"
+                  width={24}
+                  height={24}
                 />
               </MessageBlock>
             </div>
             <div className="absolute left-[-5rem] top-24 rotate-[-1deg]">
               <MessageBlock mainText="Friend’s mint" secondText="+100 Points">
-                <div
-                  style={{
-                    backgroundImage: `url(${lightningIcon.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="size-[24px]"
+                <Image
+                  src={lightningIcon.src}
+                  alt="lightningIcon"
+                  width={24}
+                  height={24}
                 />
               </MessageBlock>
             </div>
             <div className="absolute left-[-5.5rem] top-44 rotate-[2deg]">
               <MessageBlock mainText="Friend’s mint" secondText="+100 Points">
-                <div
-                  style={{
-                    backgroundImage: `url(${lightningIcon.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="size-[24px]"
+                <Image
+                  src={lightningIcon.src}
+                  alt="lightningIcon"
+                  width={24}
+                  height={24}
                 />
               </MessageBlock>
             </div>
             <div className="absolute left-[-4.5rem] top-64 rotate-[-3deg]">
               <MessageBlock mainText="Invited friend" secondText="+200 Points">
-                <div
-                  style={{
-                    backgroundImage: `url(${profileIcon.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="size-[24px]"
+                <Image
+                  src={profileIcon.src}
+                  alt="profileIcon"
+                  width={24}
+                  height={24}
                 />
               </MessageBlock>
             </div>
