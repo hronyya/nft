@@ -32,13 +32,13 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} container mx-auto max-w-[640px] overflow-x-hidden bg-mainback sm:max-w-[1920px]`}
+        className={`${roboto.className} container mx-auto max-w-[640px] overflow-x-hidden bg-mainback sm:max-w-[8400px]`}
       >
         <div
           style={{
-            width: 'calc(100vw - 10%);',
+            width: 'calc(100vw);',
           }}
-          className="mx-auto flex min-h-screen flex-col justify-center sm:w-1"
+          className="mx-auto flex min-h-screen flex-col justify-center overflow-x-hidden sm:w-1"
         >
           <Header />
           <TranslationsProvider

@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: { minism: '390px' },
       keyframes: {
         ticker: {
           '0%': { transform: 'translateX(-8%)' },
@@ -68,7 +69,6 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         monke: '@/public/058810892b364fd6879fe1a6054a3978.png',
       },
-      screens: {},
     },
   },
   plugins: [],

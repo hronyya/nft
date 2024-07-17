@@ -14,7 +14,7 @@ import vectorPhone4 from '@/public/vectorPhone4.png';
 export default function Banner() {
   const { t } = useTranslation();
   return (
-    <div className="relative mb-10 flex h-[520px] w-full flex-col items-center gap-16 overflow-hidden rounded-[30px] bg-backbanner text-center leading-tight text-white sm:mb-60 sm:w-[75%] sm:justify-center md:h-[318px] md:w-[98%] lg:w-[90%]">
+    <div className="relative mb-10 flex h-[520px] w-[90%] flex-col items-center gap-16 overflow-hidden rounded-[30px] bg-backbanner text-center leading-tight text-white sm:mb-60 sm:w-[75%] sm:justify-center md:h-[318px] md:w-[98%] lg:w-[90%] 2xl:w-[1700px]">
       <div className="absolute left-10 top-0">
         <BlurCircle />
       </div>

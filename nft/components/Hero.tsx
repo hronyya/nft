@@ -52,7 +52,7 @@ const CARD_MONO_DATA = [
     startDate: new Date('2024-06-25T00:00:00'),
     endDate: new Date('2024-06-26T07:11:00'),
     className:
-      'absolute right-[-20%] top-[-50%] -z-10 rotate-12 sm:right-[-4%] sm:top-[-20%] xl:top-[-10%] md:right-[0%] lg:right-[0%] xl:right-[3%] xl:w-[319px] 2xl:right-[5%]',
+      'absolute minism:right-[-20%] right-[-25%] top-[-50%] -z-10 rotate-12 sm:right-[-4%] sm:top-[-20%] xl:top-[-10%] md:right-[0%] lg:right-[0%] xl:right-[3%] xl:w-[319px] 2xl:right-[5%]',
     transformOrigin: 'center center',
   },
   {
@@ -103,10 +103,10 @@ export default function Hero() {
       ))}
 
       <div className="z-10 mb-[100px] flex flex-col items-center text-white md:mb-[260px]">
-        <h1 className="mb-[12px] w-8/12 text-center text-4xl+ font-semibold leading-[48px] tracking-tight sm:w-8/12 sm:text-3xl md:w-full lg:text-5xl xl:text-5xl+ 2xl:text-7xl">
+        <h1 className="minism:w-8/12 minism:text-4xl+ mb-[12px] w-10/12 text-center text-[32px] font-semibold leading-[48px] tracking-tight sm:w-8/12 sm:text-3xl md:w-full lg:text-5xl xl:text-5xl+ 2xl:text-7xl">
           {t('heroH1')}
         </h1>
-        <h4 className="mb-[40px] text-[32px] font-semibold tracking-tight text-backtext sm:mb-[80px] md:text-lg lg:text-4xl+ xl:text-5xl 2xl:text-6xl">
+        <h4 className="mb-[40px] text-[22px] font-semibold tracking-tight text-backtext sm:mb-[80px] md:text-lg lg:text-4xl+ xl:text-5xl 2xl:text-6xl">
           {t('heroP')}
         </h4>
         <Button text={t('buttonText')} width="hero" />

@@ -127,7 +127,7 @@ export default function OurAdvantages() {
   const { t } = useTranslation();
 
   return (
-    <div className="scale-100 md:scale-[0.6] lg:scale-[0.75] xl:scale-100">
+    <div className="minism:scale-100 scale-[0.8] overflow-hidden md:scale-[0.6] lg:scale-[0.75] xl:scale-100">
       <h3 className="pb-10 text-center text-3xl font-semibold text-white sm:pb-20 sm:text-4xl+">
         {t('advantagesH3')}
       </h3>

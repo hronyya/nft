@@ -35,7 +35,7 @@ const stars = [
 export default function MotivationalBlock() {
   const { t } = useTranslation();
   return (
-    <div className="relative mb-0 flex w-[50%] flex-col items-center gap-10 py-14 text-center md:mb-[100px]">
+    <div className="minism:scale-100 relative mb-0 flex w-[50%] scale-[0.8] flex-col items-center gap-10 py-14 text-center md:mb-[100px]">
       {stars.map((star, id) => {
         return (
           <div
