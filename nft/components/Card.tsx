@@ -1,12 +1,9 @@
 import Image, { StaticImageData } from 'next/image';
 
-import BG from '@/public/058810892b364fd6879fe1a6054a3978.png';
-
 import { formatDuration } from '@/utils/Date';
 import MiniMonitor from './MiniMonitor';
 import ClockSVG from './icons/ClockSVG';
 import RatingSVG from './icons/RatingSVG';
-import { ReactNode } from 'react';
 
 export default function Card({
   img,
@@ -99,7 +96,7 @@ export function CardMono({
   return (
     <div className={className}>
       <div
-        className="-z-10 h-[400px] w-[300px] scale-[0.4] rounded-2xl bg-white/10 pt-5 backdrop-blur-sm sm:h-[409.93px] sm:w-[265px] 2xl:scale-100"
+        className="-z-10 h-[400px] w-[300px] scale-[0.4] rounded-2xl bg-white/10 pt-5 backdrop-blur-sm sm:h-[409.93px] sm:w-[265px] sm:scale-[0.6] md:scale-75 lg:scale-100"
         style={{
           transformOrigin: transformOrigin,
         }}

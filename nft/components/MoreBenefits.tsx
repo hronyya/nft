@@ -17,7 +17,7 @@ const Benefits = [
 
 export default function MoreBenefits() {
   return (
-    <div className="mx-auto flex w-[350px] flex-col items-center gap-[100px]">
+    <div className="mx-auto flex w-[350px] flex-col items-center gap-[100px] md:scale-[0.85] lg:scale-100">
       {Benefits.map((benefit, id) => (
         <Benefit key={id} data={{ id, ...benefit }} />
       ))}

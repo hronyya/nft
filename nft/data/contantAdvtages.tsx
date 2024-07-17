@@ -1,9 +1,3 @@
-'use client';
-
-import { useTranslation } from 'react-i18next';
-
-import CardAdvantages from './CardAdvantages';
-
 import MessageBlock from '@/components/MessageBlock';
 import phone1 from '@/public/phone1.png';
 import phone1_1 from '@/public/phone1_1.png';
@@ -122,28 +116,3 @@ export const cards = [
     ),
   },
 ];
-
-export default function OurAdvantages() {
-  const { t } = useTranslation();
-
-  return (
-    <div className="scale-100 md:scale-[0.6] lg:scale-[0.75] xl:scale-100">
-      <h3 className="pb-10 text-center text-3xl font-semibold text-white sm:pb-20 sm:text-4xl+">
-        {t('advantagesH3')}
-      </h3>
-      <div className="flex flex-col items-center justify-center gap-5 md:flex-row">
-        {cards.map((card, id) => (
-          <CardAdvantages
-            key={id}
-            title={t(`advantagesTitle${id + 1}`)}
-            text={t(`advantagesValue${id + 1}`)}
-          >
-            <div className="relative h-[470px] w-[228px] scale-[0.8] sm:scale-[0.8] 2xl:scale-100">
-              {card.children}
-            </div>
-          </CardAdvantages>
-        ))}
-      </div>
-    </div>
-  );
-}

@@ -1,4 +1,9 @@
-import { createInstance, InitOptions, i18n as I18nInstance } from 'i18next';
+import {
+  createInstance,
+  InitOptions,
+  i18n as I18nInstance,
+  Resource,
+} from 'i18next';
 import { initReactI18next } from 'react-i18next/initReactI18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import i18nConfig from '@/i18nConfig';
@@ -8,10 +13,10 @@ export default async function initTranslations(
   locale: string,
   namespaces: string[],
   i18nInstance?: I18nInstance,
-  resources?: i18next.Resource,
+  resources?: Resource,
 ): Promise<{
   i18n: I18nInstance;
-  resources: i18next.Resource;
+  resources: Resource;
   t: TFunction;
 }> {
   i18nInstance = i18nInstance || createInstance();
@@ -21,7 +26,7 @@ export default async function initTranslations(
   if (!resources) {
     i18nInstance.use(
       resourcesToBackend(
-        (language, namespace) =>
+        (language: any, namespace: any) =>
           import(`@/locales/${language}/${namespace}.json`),
       ),
     );
